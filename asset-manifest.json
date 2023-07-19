@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Projects/complete-g/static/css/main.554d856e.css",
+    "main.js": "/React-Projects/complete-g/static/js/main.921ac288.js",
+    "index.html": "/React-Projects/complete-g/index.html",
+    "main.554d856e.css.map": "/React-Projects/complete-g/static/css/main.554d856e.css.map",
+    "main.921ac288.js.map": "/React-Projects/complete-g/static/js/main.921ac288.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.554d856e.css",
+    "static/js/main.921ac288.js"
+  ]
+}
