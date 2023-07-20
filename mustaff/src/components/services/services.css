@@ -3,6 +3,11 @@
   column-gap: 1.875rem;
 }
 
+.s::before {
+  left: -1.7rem !important;
+  top: -.84rem !important;
+}
+
 .services__card {
   text-align: center;
   padding: 1.875rem;

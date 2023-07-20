@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import Logo from "../../assets/letter-m.png";
+import Logo from "../../assets/logoo.png";
 
 const Sidebar = () => {
   return (
@@ -15,7 +15,7 @@ const Sidebar = () => {
               <a href='#home' className='nav__link'>
                 <i className='icon-home'></i>
               </a>
-            </li>    
+            </li>
             <li className='nav__item'>
               <a href='#about' className='nav__link'>
                 <i className='icon-user-following'></i>
@@ -23,12 +23,12 @@ const Sidebar = () => {
             </li>
             <li className='nav__item'>
               <a href='#services' className='nav__link'>
-                <i className='icon-briefcase'></i>
+                <i className='icon-settings'></i>
               </a>
             </li>
             <li className='nav__item'>
               <a href='#resume' className='nav__link'>
-                <i className='icon-graduation'></i>
+                <i className='icon-briefcase'></i>
               </a>
             </li>
             <li className='nav__item'>
@@ -42,7 +42,7 @@ const Sidebar = () => {
               </a>
             </li>
             <li className='nav__item'>
-              <a href='#contact' className='nav__link'>
+              <a href='#contact' Name='nav__link'>
                 <i className='icon-bubble'></i>
               </a>
             </li>

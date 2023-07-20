@@ -10,28 +10,28 @@ const data = [
     image: Image1,
     title: "Graphic Design",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Innovation new ideas in your business designing, #Advertising posts #Brand identity #Brochures #Interfaces of applications and websites #All advertising designs.",
   },
   {
     id: 3,
     image: Image3,
     title: "Video Editing",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "We take your videos and edit them professsionally We put in your hands a world of visual creativity, #promo producer #games  #event  #short film  #program #visual content  #all kinds of video clips.",
   },
   {
     id: 2,
     image: Image2,
     title: "Photography",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "We document the moment from a creative angle, #Photography of official events #Photograhy of conferences and seminars #Photography of exhibitions and others...",
   },
 ];
 
 const Services = () => {
   return (
-    <section className='services countainer section'>
-      <h2 className='section__title'>Services</h2>
+    <section className='services countainer section' id="services">
+      <h2 className='section__title s'>Services</h2>
       <div className='services__container grid'>
         {data.map(({ id, image, title, description }) => {
           return (

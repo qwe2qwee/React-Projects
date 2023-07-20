@@ -2,10 +2,11 @@ import React from "react";
 import "./About.css";
 import about from "../../assets/Imgs/about.jpg";
 import AboutBox from "./AboutBox";
+import pdf from '../pricing/pdf/قائمة اسعار musta12.pdf'
 
 const About = () => {
   return (
-    <section className='about countainer section'>
+    <section className='about countainer section' id="about">
       <h2 className='section__title'>About Me</h2>
       <div className='about__countainer grid'>
         <div className="left">
@@ -19,7 +20,7 @@ const About = () => {
               rich experience in design and Photograph and video editing,
               also I am good at Motion Graphic.
             </p>
-            <a href='' className='btn'>
+            <a href={pdf} download={pdf} className='btn'>
               {" "}
               Download CV
             </a>
