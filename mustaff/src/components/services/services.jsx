@@ -1,7 +1,7 @@
 import React from "react";
 import "./services.css";
-import Image1 from "../../assets/service-1.svg";
-import Image2 from "../../assets/service-3.svg";
+import Image1 from "../../assets/ser1.png";
+import Image2 from "../../assets/ser2.png";
 import Image3 from "../../assets/server11.png";
 
 const data = [
@@ -36,7 +36,7 @@ const Services = () => {
         {data.map(({ id, image, title, description }) => {
           return (
             <div className='services__card' key={id}>
-              <img src={image} alt='' className='services__img' />
+              <img src={image} alt='' className='services__img'/>
               <h3 className='services__title'>{title}</h3>
               <p className='services__description'>{description}</p>
             </div>
