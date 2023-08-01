@@ -108,7 +108,7 @@ img {
 
 .section__title::before {
   content: "";
-  background: url("./assets/avatar-1.svg");
+  background: url("./assets/avatar-2.svg");
   height: var(--h1-font-size);
   width: var(--h1-font-size);
   position: absolute;
