@@ -14,7 +14,7 @@ const Data = [
   {
     id: 2,
     image: Image3,
-    title: "John Doe",
+    title: "",
     subtitle: " King Abdulaziz University",
     comment:
       "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",

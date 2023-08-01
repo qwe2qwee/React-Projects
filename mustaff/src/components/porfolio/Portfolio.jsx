@@ -17,7 +17,7 @@ const Portfolio = () => {
         <span className='work__item'onClick={()=>filterItems("Design")}>Design</span>
         <span className='work__item'onClick={()=>filterItems("Branding")}>Branding</span>
         <span className='work__item'onClick={()=>filterItems("Editing")}>Editing</span>
-        <span className='work__item'onClick={()=>filterItems("Photography")}>Photography</span>
+        <span className='work__item'onClick={()=>filterItems("Motion graphic")}>Motion graphic</span>
       </div>
       <div className='work__countainer grid'>
         {" "}
