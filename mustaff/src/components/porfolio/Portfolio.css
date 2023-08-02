@@ -102,3 +102,34 @@
   height: 100%;
   background-size: cover;
 }
+
+
+
+@media (max-width:1024px) {
+
+  .work__filters {
+    justify-content: center;
+  }
+  .work__countainer {
+    grid-template-columns: repeat(2,330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media (max-width:768px) {
+  .work__countainer {
+    grid-template-columns: 319px;
+  }
+
+  .work__filters {
+     row-gap: .25rem;
+     flex-wrap: wrap;
+  }
+}
+
+@media (max-width:350px) {
+  .work__container {
+    grid-template-columns: 1fr;
+  }
+}

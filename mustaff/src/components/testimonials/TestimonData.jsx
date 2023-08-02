@@ -6,7 +6,7 @@ const Data = [
   {
     id: 1,
     image: Image1,
-    title: "John Doe",
+    title: "",
     subtitle: " Al Shaab Art Gallery in Jeddah",
     comment:
       "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
@@ -22,7 +22,7 @@ const Data = [
   {
     id: 3,
     image: Image2,
-    title: "John Doe",
+    title: "",
     subtitle: " Saudi Building Code",
     comment:
       "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
@@ -30,7 +30,7 @@ const Data = [
   {
     id: 4,
     image: Image3,
-    title: "John Doe",
+    title: "",
     subtitle: "AL - Baha chamber",
     comment:
       "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",

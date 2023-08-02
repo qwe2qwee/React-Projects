@@ -58,3 +58,19 @@
 .services__card:nth-child(2) .services__description {
   color: var(--text-color);
 }
+
+@media (max-width:1024px) {
+  .services__container {
+    grid-template-columns: repeat(2 , 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+
+
+@media (max-width:768px) {
+  .services__container {
+    grid-template-columns:  310px  
+  }
+}

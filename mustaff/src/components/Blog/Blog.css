@@ -61,3 +61,27 @@
 .blog__dot {
   font-weight: var(--font-bold);
 }
+
+
+
+@media (max-width:1024px) {
+  .blog__container {
+    grid-template-columns: repeat(2 , 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+
+
+@media (max-width:768px) {
+  .blog__container {
+    grid-template-columns:  310px  
+  }
+}
+
+@media (max-width:350px) {
+  .blog__container {
+    grid-template-columns: 1fr;
+  }
+}
