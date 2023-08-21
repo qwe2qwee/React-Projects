@@ -1,4 +1,3 @@
-import react from "react";
 import CartIcon from "../Cart/CartIcont";
 import classes from "./HeaderCartButton.module.css";
 

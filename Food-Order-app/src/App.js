@@ -1,14 +1,17 @@
-import react , {Fragment} from "react"
+import { Fragment } from "react";
 
 import Header from "./components/Layout/header";
+import Meals from "./components/meals/Meals";
 
-
-const App = ()=> {
+const App = () => {
   return (
     <Fragment>
-      <Header/>
+      <Header />
+      <main>
+        <Meals />
+      </main>
     </Fragment>
   );
-}
+};
 
-export default App; 
+export default App;
