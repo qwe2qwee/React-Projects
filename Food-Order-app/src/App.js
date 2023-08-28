@@ -13,9 +13,8 @@ const App = () => {
   const hideCartHandler = () => setCartShow(false);
   return (
     <CartProvider>
-      {cartShow && <Cart onClose={hideCartHandler}/>}
-
-      <Header show = {showCartHandler} />
+      {cartShow && <Cart onClose={hideCartHandler} />}
+      <Header show={showCartHandler} />
       <main>
         <Meals />
       </main>
