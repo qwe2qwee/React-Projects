@@ -2,7 +2,7 @@ import classes from './QuoteItem.module.css';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const QuoteItem = (props) => {
-  const path = "/quotes/" + props.id + "/comment";
+  const path = "/quotes/" + props.id ;
   return (
     <li className={classes.item}>
       <figure>

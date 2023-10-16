@@ -2,6 +2,7 @@ import { useParams, Route } from "react-router-dom/cjs/react-router-dom.min";
 import Comments from "../components/comments/Comments";
 import HighlightedQuote from "../components/quotes/HighlightedQuote";
 import Layout from "../components/layout/Layout";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 const DUMMY_QUOTES = [
   { id: "q1", author: "hossin", text: "I love learning newthings" },
   {
@@ -22,6 +23,13 @@ const QuoteDeatail = () => {
   return (
     <Layout>
       <HighlightedQuote text={quote.text} author={quote.author} />
+      <Route path={`/quotes/${pramas.qId}`} exact>
+        <div className='centered'>
+          <Link to={path} className='btn--flat'>
+            Load Commtents
+          </Link>
+        </div>
+      </Route>
 
       <Route path={path}>
         <Comments />
