@@ -1,5 +1,8 @@
 import QuoteForm from "../components/quotes/QuoteForm";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
+import Layout from "../components/layout/Layout";
+
+
 const NewQuote = () => {
   const history = useHistory()
   const addQuoteHandler = quoteData => {
@@ -7,7 +10,7 @@ const NewQuote = () => {
     history.push('/quotes')
     
   }
-  return<QuoteForm onAdd={addQuoteHandler}/>
+  return <Layout><QuoteForm onAdd={addQuoteHandler}/> </Layout> 
 };
 
 export default NewQuote;

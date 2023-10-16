@@ -1,4 +1,5 @@
-import QuoteList from"../components/quotes/QuoteList"
+import QuoteList from "../components/quotes/QuoteList";
+import Layout from "../components/layout/Layout";
 
 const DUMMY_QUOTES = [
   { id: "q1", author: "hossin", text: "I love learning newthings" },
@@ -10,7 +11,11 @@ const DUMMY_QUOTES = [
 ];
 
 const AllQuotes = () => {
-  return <QuoteList quotes={DUMMY_QUOTES}/>;
+  return (
+    <Layout>
+      <QuoteList quotes={DUMMY_QUOTES} />{" "}
+    </Layout>
+  );
 };
 
 export default AllQuotes;

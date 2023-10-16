@@ -1,7 +1,7 @@
-import { Fragment } from "react";
 import { useParams, Route } from "react-router-dom/cjs/react-router-dom.min";
 import Comments from "../components/comments/Comments";
 import HighlightedQuote from "../components/quotes/HighlightedQuote";
+import Layout from "../components/layout/Layout";
 const DUMMY_QUOTES = [
   { id: "q1", author: "hossin", text: "I love learning newthings" },
   {
@@ -20,13 +20,13 @@ const QuoteDeatail = () => {
     return <p>No quote found!</p>;
   }
   return (
-    <Fragment>
+    <Layout>
       <HighlightedQuote text={quote.text} author={quote.author} />
 
       <Route path={path}>
         <Comments />
       </Route>
-    </Fragment>
+    </Layout>
   );
 };
 
