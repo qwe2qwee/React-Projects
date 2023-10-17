@@ -1,31 +1,54 @@
-import { useParams, Route } from "react-router-dom/cjs/react-router-dom.min";
+import {
+  useParams,
+  Route,
+  useRouteMatch,
+} from "react-router-dom/cjs/react-router-dom.min";
 import Comments from "../components/comments/Comments";
 import HighlightedQuote from "../components/quotes/HighlightedQuote";
 import Layout from "../components/layout/Layout";
 import { Link } from "react-router-dom/cjs/react-router-dom";
-const DUMMY_QUOTES = [
-  { id: "q1", author: "hossin", text: "I love learning newthings" },
-  {
-    id: "q2",
-    author: "hossin simo",
-    text: "I love learning from reading books",
-  },
-];
+import useHttp from "../hooks/use-http";
+import { getSingleQuote } from "../lib/api";
+import { useEffect } from "react";
+import LoadingSpinner from "../components/UI/LoadingSpinner";
 
 const QuoteDeatail = () => {
+  const {
+    sendRequest,
+    status,
+    data: loadedQuote,
+    error,
+  } = useHttp(getSingleQuote, true);
+  const match = useRouteMatch();
   const pramas = useParams();
-  const path = "/quotes/" + pramas.qId + "/comment";
-  const quote = DUMMY_QUOTES.find((q) => q.id === pramas.qId);
+  const path = `${match.path}/comment`;
+  const { qId } = pramas;
 
-  if (!quote) {
+  useEffect(() => {
+    sendRequest(qId);
+  }, [sendRequest, qId]);
+
+  if (status === "pending") {
+    return (
+      <div className='centered'>
+        <LoadingSpinner />
+      </div>
+    );
+  }
+
+  if (error) {
+    return<p className="centered">{error}</p>
+  }
+
+  if (!loadedQuote.text) {
     return <p>No quote found!</p>;
   }
   return (
     <Layout>
-      <HighlightedQuote text={quote.text} author={quote.author} />
-      <Route path={`/quotes/${pramas.qId}`} exact>
+      <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} />
+      <Route path={`${match.path}`} exact>
         <div className='centered'>
-          <Link to={path} className='btn--flat'>
+          <Link to={`${match.url}/comment`} className='btn--flat'>
             Load Commtents
           </Link>
         </div>

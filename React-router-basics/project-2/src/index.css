@@ -54,3 +54,11 @@ body {
   background-color: teal;
   color: white;
 }
+
+
+
+@media (min-width: 640px) {
+  .root {
+    min-width: 551px;
+  }
+}
